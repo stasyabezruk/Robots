@@ -124,12 +124,12 @@ const inputNode = document.querySelector("#input");
 const outputNode = document.querySelector("#output");
 
 function run(instructions) {
-    var lines = instructions.split("\n").filter((v) => v != "");
-    var line = lines.shift();
-    var params = line.split(" ");
+    let lines = instructions.split("\n").filter((v) => v != "");
+    let line = lines.shift();
+    let params = line.split(" ");
 
-    var grid = new Grid(parseInt(params[0]), parseInt(params[1]));
-    var robot;
+    let grid = new Grid(parseInt(params[0]), parseInt(params[1]));
+    let robot;
     let result = [];
 
     while (lines.length > 0) {
