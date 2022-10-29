@@ -1,7 +1,10 @@
+const WidthGrid = 50;
+const HeightGrid = 50;
+
 class Grid {
     constructor(width, height) {
-        this.width = width > 50 ? 50 : width;
-        this.height = height > 50 ? 50 : height;
+        this.width = width > WidthGrid ? WidthGrid : width;
+        this.height = height > HeightGrid ? HeightGrid : height;
         this.scents = [];
     }
 
